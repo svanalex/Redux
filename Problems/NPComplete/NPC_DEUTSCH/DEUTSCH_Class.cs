@@ -10,7 +10,7 @@ class DEUTSCH : IProblem<DeutschSolver, DeutschVerifier, DummyVisualization> {
 
     // --- Fields ---
     public string problemName {get;} = "Deutsch"; // Name as it appears in the dropdown selection panel
-    public string formalDefinition {get;} =  "Deutsch = {<i, w> | i is int, w is int}"; // Mathematical description of the problem (todo later)
+    public string formalDefinition {get;} =  "Deutsch = {<i, w> | i is bit (0,1), w is bit (0,1)}"; // Mathematical description of the problem (todo later)
     public string problemDefinition { get; } = "Deutsch's algorithm solves the parity problem for the special case that n=1. It is represented by an ordered list......"; // plaintext description of the problem
     public string source { get; } = "todo"; // Academic paper proper citation
     public string sourceLink { get; } = "https://royalsocietypublishing.org/doi/10.1098/rspa.1985.0070"; // Link to the academic paper
