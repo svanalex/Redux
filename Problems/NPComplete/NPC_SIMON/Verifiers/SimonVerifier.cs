@@ -2,7 +2,7 @@ using API.Interfaces;
 
 namespace API.Problems.NPComplete.NPC_SIMON.Verifiers;
 
-class SIMONVerifier : IVerifier<SIMON> {
+class SimonVerifier : IVerifier<SIMON> {
 
     // --- Fields ---
     public string verifierName {get;} = "ProblemVerifier";
@@ -18,7 +18,7 @@ class SIMONVerifier : IVerifier<SIMON> {
     }
 
     // --- Methods Including Constructors ---
-    public SIMONVerifier() {
+    public SimonVerifier() {
         
     }
 

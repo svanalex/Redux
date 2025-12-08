@@ -4,7 +4,7 @@ using API.Problems.NPComplete.NPC_SIMON.Solvers;
 using API.Problems.NPComplete.NPC_SIMON.Verifiers;
 using SPADE;
 
-namespace API.Problems.NPComplete.NPC_SIMON;
+namespace API.Problems.NPComplete.NPC_DEUTSCHJOZSA;
 
 class SIMON : IProblem<SimonSolver, SimonVerifier, DummyVisualization> {
 
@@ -18,8 +18,8 @@ class SIMON : IProblem<SimonSolver, SimonVerifier, DummyVisualization> {
     private static readonly string _defaultInstance = "(00, 01, 10, 11, 01, 00, 11, 10)"; 
     public string instance {get;set;} = string.Empty;
     public string wikiName {get;} = ""; // Wiki name or link? - not used yet
-    public SIMONSolver defaultSolver {get;} = new SimonSolver();
-    public SIMONVerifier defaultVerifier { get; } = new SimonVerifier();
+    public SimonSolver defaultSolver {get;} = new SimonSolver();
+    public SimonVerifier defaultVerifier { get; } = new SimonVerifier();
     public DummyVisualization defaultVisualization { get; } = new DummyVisualization();
     public string[] contributors {get;} = { "Eric Hill", "Paul Gilbreath", "Max Gruenwoldt", "Alex Svancara" };
 
