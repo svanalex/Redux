@@ -4,7 +4,7 @@ using API.Problems.NPComplete.NPC_SIMON.Solvers;
 using API.Problems.NPComplete.NPC_SIMON.Verifiers;
 using SPADE;
 
-namespace API.Problems.NPComplete.NPC_DEUTSCHJOZSA;
+namespace API.Problems.NPComplete.NPC_SIMON;
 
 class SIMON : IProblem<SimonSolver, SimonVerifier, DummyVisualization> {
 
@@ -16,6 +16,7 @@ class SIMON : IProblem<SimonSolver, SimonVerifier, DummyVisualization> {
     public string source { get; } = "Simon, Daniel R. On the power of quantum computation. SIAM journal on computing, 1997, 26. Jg., Nr. 5, S. 1474-1483."; // Academic paper proper citation
     public string sourceLink { get; } = "https://epubs.siam.org/doi/abs/10.1137/S0097539796298637?casa_token=q1_RWPmvpQ0AAAAA:vmai1NwqSJEUGwydbsrdvH1tsKxcE_MoWfiTwQda9yJKhC0prizshyidP4VcDZK8n5CuqoeaqlQ"; // Link to the academic paper
     private static readonly string _defaultInstance = "(00, 01, 10, 11, 01, 00, 11, 10)"; 
+    public string defaultInstance {get;} = _defaultInstance;
     public string instance {get;set;} = string.Empty;
     public string wikiName {get;} = ""; // Wiki name or link? - not used yet
     public SimonSolver defaultSolver {get;} = new SimonSolver();
